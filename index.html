@@ -20,7 +20,6 @@
         }
         .app-container { max-width: 430px; margin: 0 auto; min-height: 100vh; position: relative; padding-bottom: 80px; }
 
-        /* Header */
         .header {
             background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
             padding: 20px;
@@ -32,7 +31,6 @@
         .header h1 { font-size: 22px; font-weight: 700; }
         .header p { font-size: 13px; opacity: 0.9; margin-top: 4px; }
 
-        /* Navigation */
         .nav-tabs {
             display: flex; overflow-x: auto; gap: 10px;
             padding: 15px; background: #1e1e2e;
@@ -50,19 +48,16 @@
         .nav-tab.active { background: #6366f1; color: white; transform: scale(1.05); }
         .nav-tab .icon { font-size: 24px; }
 
-        /* Sections */
         .section { display: none; padding: 15px; animation: fadeIn 0.3s; }
         .section.active { display: block; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* Cards */
         .card {
             background: #1e1e2e; border-radius: 20px; padding: 20px;
             margin-bottom: 15px; border: 1px solid #2d2d44;
         }
         .card-title { font-size: 14px; color: #94a3b8; margin-bottom: 15px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
 
-        /* Stats Grid */
         .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
         .stat-card {
             background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
@@ -77,7 +72,6 @@
         .stat-value.purple { color: #c084fc; }
         .stat-label { font-size: 12px; color: #94a3b8; }
 
-        /* Buttons */
         .btn {
             width: 100%; padding: 16px; border-radius: 14px; border: none;
             font-size: 16px; font-weight: 600; cursor: pointer;
@@ -90,7 +84,6 @@
         .btn-whatsapp { background: linear-gradient(135deg, #25d366, #128c7e); color: white; }
         .btn:active { transform: scale(0.98); opacity: 0.9; }
 
-        /* Forms */
         .form-group { margin-bottom: 15px; }
         .form-label { display: block; font-size: 13px; color: #94a3b8; margin-bottom: 6px; font-weight: 500; }
         .form-input, .form-select, .form-textarea {
@@ -101,7 +94,6 @@
         .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: #6366f1; }
         .form-textarea { min-height: 80px; resize: vertical; }
 
-        /* Lists */
         .list-item {
             background: #1e1e2e; border-radius: 14px; padding: 16px;
             margin-bottom: 10px; border: 1px solid #2d2d44;
@@ -111,11 +103,9 @@
         .list-item-info p { font-size: 12px; color: #94a3b8; }
         .list-item-price { font-size: 18px; font-weight: 700; color: #4ade80; }
 
-        /* Empty State */
         .empty-state { text-align: center; padding: 40px 20px; color: #64748b; }
         .empty-state .icon { font-size: 48px; margin-bottom: 12px; opacity: 0.5; }
 
-        /* Bottom Nav */
         .bottom-nav {
             position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
             width: 100%; max-width: 430px; background: #1e1e2e;
@@ -130,7 +120,6 @@
         .bottom-nav-item.active { color: #6366f1; }
         .bottom-nav-item .icon { font-size: 22px; margin-bottom: 2px; }
 
-        /* Modal */
         .modal-overlay {
             position: fixed; top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(0,0,0,0.8); z-index: 1000;
@@ -147,7 +136,6 @@
         .modal-title { font-size: 20px; font-weight: 700; }
         .modal-close { font-size: 24px; background: none; border: none; color: #94a3b8; cursor: pointer; }
 
-        /* TICKET DE CAJA - ESTILO IMPRESORA TÉRMICA */
         .ticket-caja {
             background: #fafafa;
             color: #1a1a1a;
@@ -198,7 +186,6 @@
             margin-bottom: 4px;
         }
 
-        /* Toast */
         .toast {
             position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-100px);
             background: #22c55e; color: white; padding: 14px 24px; border-radius: 12px;
@@ -206,7 +193,6 @@
         }
         .toast.show { transform: translateX(-50%) translateY(0); }
 
-        /* Quick Actions */
         .quick-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
         .quick-action-btn {
             background: #252538; border: 1px solid #2d2d44; border-radius: 14px;
@@ -215,15 +201,12 @@
         }
         .quick-action-btn .icon { font-size: 24px; display: block; margin-bottom: 6px; }
 
-        /* Delete btn */
         .delete-btn { background: none; border: none; color: #ef4444; font-size: 18px; cursor: pointer; padding: 8px; }
 
-        /* Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #0f0f1a; }
         ::-webkit-scrollbar-thumb { background: #2d2d44; border-radius: 3px; }
 
-        /* Stock badge */
         .stock-badge {
             display: inline-block; padding: 4px 10px; border-radius: 20px;
             font-size: 11px; font-weight: 600; margin-top: 4px;
@@ -232,14 +215,11 @@
         .stock-low { background: #451a03; color: #fbbf24; }
         .stock-out { background: #450a0a; color: #f87171; }
 
-        /* Edit btn */
         .edit-btn { background: none; border: none; color: #60a5fa; font-size: 18px; cursor: pointer; padding: 8px; }
 
-        /* Section title with action */
         .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         .section-header h2 { font-size: 18px; }
 
-        /* Logo picker */
         .logo-picker {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -266,14 +246,12 @@
 </head>
 <body>
     <div class="app-container">
-        <!-- Header -->
         <div class="header">
             <div class="header-icon" id="appLogoHeader">🖨️</div>
             <h1 id="appNombreHeader">Control Sublimación Pro</h1>
             <p id="appSloganHeader">Tu negocio en tu bolsillo</p>
         </div>
 
-        <!-- Navigation Tabs -->
         <div class="nav-tabs" id="navTabs">
             <button class="nav-tab active" onclick="showSection('resumen', this)">
                 <span class="icon">📊</span>
@@ -297,7 +275,6 @@
             </button>
         </div>
 
-        <!-- RESUMEN -->
         <div id="resumen" class="section active">
             <div class="card">
                 <div class="stats-grid">
@@ -365,7 +342,6 @@
             </div>
         </div>
 
-        <!-- PRODUCTOS -->
         <div id="productos" class="section">
             <button class="btn btn-primary" onclick="openModal('nuevoProductoModal')">
                 ➕ Agregar Producto
@@ -378,7 +354,6 @@
             </div>
         </div>
 
-        <!-- COTIZAR -->
         <div id="cotizar" class="section">
             <button class="btn btn-success" onclick="openModal('nuevaCotizacionModal')">
                 📝 Nueva Cotización
@@ -391,7 +366,6 @@
             </div>
         </div>
 
-        <!-- RECIBOS -->
         <div id="recibos" class="section">
             <div id="listaRecibos">
                 <div class="empty-state">
@@ -401,7 +375,6 @@
             </div>
         </div>
 
-        <!-- CONFIGURACIÓN -->
         <div id="config" class="section">
             <div class="card">
                 <div class="card-title">🏷️ Datos del Negocio</div>
@@ -469,7 +442,6 @@
         </div>
     </div>
 
-    <!-- Bottom Navigation -->
     <div class="bottom-nav">
         <button class="bottom-nav-item active" onclick="showSection('resumen', document.querySelectorAll('.nav-tab')[0]); updateBottomNav(0)">
             <span class="icon">📊</span>
@@ -493,7 +465,6 @@
         </button>
     </div>
 
-    <!-- MODAL: Nuevo Producto -->
     <div class="modal-overlay" id="nuevoProductoModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -534,7 +505,6 @@
         </div>
     </div>
 
-    <!-- MODAL: Editar Producto -->
     <div class="modal-overlay" id="editarProductoModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -576,7 +546,6 @@
         </div>
     </div>
 
-    <!-- MODAL: Nueva Cotización -->
     <div class="modal-overlay" id="nuevaCotizacionModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -613,7 +582,6 @@
         </div>
     </div>
 
-    <!-- MODAL: Nuevo Gasto -->
     <div class="modal-overlay" id="nuevoGastoModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -641,7 +609,6 @@
         </div>
     </div>
 
-    <!-- MODAL: Ver Recibo / Ticket -->
     <div class="modal-overlay" id="verReciboModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -660,7 +627,6 @@
         </div>
     </div>
 
-    <!-- MODAL: Ajustar Stock -->
     <div class="modal-overlay" id="ajustarStockModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -688,12 +654,10 @@
         </div>
     </div>
 
-    <!-- Toast -->
     <div class="toast" id="toast"></div>
 
     <script>
-        // ==================== DATABASE ====================
-        let db = {
+  let db = {
             productos: JSON.parse(localStorage.getItem('sublim_productos')) || [],
             cotizaciones: JSON.parse(localStorage.getItem('sublim_cotizaciones')) || [],
             gastos: JSON.parse(localStorage.getItem('sublim_gastos')) || [],
@@ -708,7 +672,6 @@
             }
         };
 
-        // Variable global para guardar el texto del ticket actual
         let ticketTextoActual = '';
 
         function saveDB() {
@@ -720,7 +683,6 @@
             actualizarResumen();
         }
 
-        // ==================== CONFIGURACIÓN ====================
         function cargarConfiguracion() {
             document.getElementById('configNombre').value = db.config.nombreNegocio;
             document.getElementById('configSlogan').value = db.config.slogan;
@@ -729,12 +691,10 @@
             document.getElementById('configStockMinimo').value = db.config.stockMinimo;
             document.getElementById('configLogo').value = db.config.logo;
 
-            // Actualizar header
             document.getElementById('appNombreHeader').textContent = db.config.nombreNegocio;
             document.getElementById('appSloganHeader').textContent = db.config.slogan;
             document.getElementById('appLogoHeader').textContent = db.config.logo;
 
-            // Marcar logo seleccionado
             document.querySelectorAll('.logo-option').forEach(opt => {
                 opt.classList.toggle('selected', opt.dataset.logo === db.config.logo);
             });
@@ -816,7 +776,6 @@
             }
         }
 
-        // ==================== UI FUNCTIONS ====================
         function showSection(sectionId, tabElement) {
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
             document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
@@ -847,7 +806,6 @@
             setTimeout(() => toast.classList.remove('show'), 2500);
         }
 
-        // ==================== PRODUCTOS ====================
         function guardarProducto() {
             const nombre = document.getElementById('prodNombre').value.trim();
             const precio = parseFloat(document.getElementById('prodPrecio').value) || 0;
@@ -941,8 +899,6 @@
             if(!p) return;
 
             const nuevoStock = parseInt(document.getElementById('ajustarStockNuevo').value) || 0;
-            const motivo = document.getElementById('ajustarStockMotivo').value.trim();
-
             p.stock = nuevoStock;
             saveDB();
             renderProductos();
@@ -1017,7 +973,6 @@
             document.getElementById('cotTotal').value = (cantidad * precio).toFixed(2);
         }
 
-        // ==================== COTIZACIONES ====================
         function guardarCotizacion() {
             const cliente = document.getElementById('cotCliente').value.trim();
             const productoId = document.getElementById('cotProducto').value;
@@ -1130,7 +1085,6 @@
             `).join('');
         }
 
-        // ==================== GASTOS ====================
         function guardarGasto() {
             const concepto = document.getElementById('gastoConcepto').value.trim();
             const monto = parseFloat(document.getElementById('gastoMonto').value) || 0;
@@ -1152,10 +1106,7 @@
 
             document.getElementById('gastoConcepto').value = '';
             document.getElementById('gastoMonto').value = '';
-        }
-
-        // ==================== RECIBOS / TICKET DE CAJA ====================
-        function generarTicketTexto(recibo) {
+        } function generarTicketTexto(recibo) {
             const cfg = db.config;
             const nombreNegocio = cfg.nombreNegocio;
             const logo = cfg.logo;
@@ -1168,7 +1119,6 @@
                 hour: '2-digit', minute: '2-digit'
             });
 
-            // Ancho del ticket: 32 caracteres (estándar impresora térmica)
             const ancho = 32;
             const linea = '─'.repeat(ancho);
             const lineaDoble = '═'.repeat(ancho);
@@ -1226,10 +1176,8 @@
                 day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit'
             });
 
-            // Generar texto plano para compartir
             ticketTextoActual = generarTicketTexto(recibo);
 
-            // Vista visual del ticket (estilo impresora térmica)
             document.getElementById('reciboContenido').innerHTML = `
                 <div class="ticket-caja" id="ticketVisual">
                     <div class="ticket-logo">${logo}</div>
@@ -1267,11 +1215,9 @@
                 return;
             }
 
-            // Codificar el texto para URL
             const texto = encodeURIComponent(ticketTextoActual);
             const urlWhatsApp = `https://wa.me/?text=${texto}`;
 
-            // Intentar abrir WhatsApp
             window.open(urlWhatsApp, '_blank');
 
             showToast('📱 Abriendo WhatsApp...');
@@ -1286,7 +1232,6 @@
             navigator.clipboard.writeText(ticketTextoActual).then(() => {
                 showToast('📋 Ticket copiado al portapapeles');
             }).catch(() => {
-                // Fallback para navegadores antiguos
                 const textarea = document.createElement('textarea');
                 textarea.value = ticketTextoActual;
                 document.body.appendChild(textarea);
@@ -1318,7 +1263,6 @@
             `).join('');
         }
 
-        // ==================== RESUMEN ====================
         function actualizarResumen() {
             const hoy = new Date().toDateString();
 
@@ -1337,7 +1281,6 @@
             document.getElementById('pendientes').textContent = pendientes;
             document.getElementById('totalProductos').textContent = db.productos.length;
 
-            // Alertas de stock
             const productosBajos = db.productos.filter(p => (p.stock || 0) <= db.config.stockMinimo && (p.stock || 0) > 0).length;
             const productosSinStock = db.productos.filter(p => (p.stock || 0) <= 0).length;
             let alertaText = '';
@@ -1345,7 +1288,6 @@
             if(productosBajos > 0) alertaText += (alertaText ? ' | ' : '') + `⚠️ ${productosBajos} bajo`;
             document.getElementById('alertasStock').textContent = alertaText;
 
-            // Resumen de inventario en dashboard
             const invContainer = document.getElementById('resumenInventario');
             const productosOrdenados = [...db.productos]
                 .sort((a, b) => (a.stock || 0) - (b.stock || 0))
@@ -1359,4 +1301,47 @@
                         <div class="list-item-info">
                             <h4 style="font-size:14px;">${p.nombre}</h4>
                         </div>
-                        <div>${getStock
+                        <div>${getStockBadge(p.stock)}</div>
+                    </div>
+                `).join('');
+            }
+
+            const movimientos = [
+                ...db.recibos.map(r => ({...r, tipo: 'ingreso'})),
+                ...db.gastos.map(g => ({...g, tipo: 'gasto'}))
+            ].sort((a,b) => b.id - a.id).slice(0, 5);
+
+            const movContainer = document.getElementById('ultimosMovimientos');
+            if(movimientos.length === 0) {
+                movContainer.innerHTML = `<div class="empty-state"><div class="icon">📭</div><p>No hay movimientos hoy</p></div>`;
+            } else {
+                movContainer.innerHTML = movimientos.map(m => `
+                    <div class="list-item">
+                        <div class="list-item-info">
+                            <h4>${m.tipo === 'ingreso' ? '💵 Venta' : '💸 Gasto'} - ${m.cliente || m.concepto}</h4>
+                            <p>${new Date(m.fecha).toLocaleTimeString('es-MX', {hour:'2-digit', minute:'2-digit'})}</p>
+                        </div>
+                        <div class="list-item-price" style="color:${m.tipo === 'ingreso' ? '#4ade80' : '#f87171'}">
+                            ${m.tipo === 'ingreso' ? '+' : '-'}$${(m.total || m.monto).toFixed(2)}
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        window.onload = function() {
+            cargarConfiguracion();
+            renderProductos();
+            renderCotizaciones();
+            renderRecibos();
+            actualizarResumen();
+        };
+
+        document.querySelectorAll('.modal-overlay').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if(e.target === this) this.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
