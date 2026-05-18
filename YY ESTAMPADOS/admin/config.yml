@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main # O master, según tu rama principal
+
+media_folder: "images/uploads" # Carpeta donde se guardarán las imágenes que subas
+public_folder: "/images/uploads" # Ruta pública para que la web las encuentre
+
+collections:
+  - name: "productos"
+    label: "Productos"
+    label_singular: "Producto"
+    folder: "_data/productos"
+    create: true
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Descripción", name: "descripcion", widget: "text" }
+      - { label: "Imagen", name: "imagen", widget: "image", required: false }
+      - { label: "Orden", name: "orden", widget: "number", default: 0 }
+
+  - name: "ofertas"
+    label: "Ofertas"
+    label_singular: "Oferta"
+    folder: "_data/ofertas"
+    create: true
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Descripción", name: "descripcion", widget: "text" }
+      - { label: "Precio Anterior", name: "precio_anterior", widget: "string", required: false }
+      - { label: "Precio Actual", name: "precio_actual", widget: "string" }
+      - { label: "Activa", name: "activa", widget: "boolean", default: true }
+
+  - name: "galeria"
+    label: "Galería"
+    label_singular: "Imagen"
+    folder: "_data/galeria"
+    create: true
+    fields:
+      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Texto Alternativo", name: "alt", widget: "string" }
+      - { label: "Categoría", name: "categoria", widget: "select", options: ["tazas", "textil", "gorras", "llaveros", "cuadros", "otros"] }

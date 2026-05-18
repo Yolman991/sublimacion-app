@@ -1,0 +1,30 @@
+{
+  "productos": [
+    {
+      "nombre": "Tazas",
+      "descripcion": "Personalizadas con fotos, frases o logos.",
+      "orden": 1
+    },
+    {
+      "nombre": "Playeras",
+      "descripcion": "Estampado full color, todas las tallas.",
+      "orden": 2
+    }
+  ],
+  "ofertas": [
+    {
+      "titulo": "2 Tazas por $150",
+      "descripcion": "Lleva dos tazas personalizadas con foto y nombre.",
+      "precio_anterior": "$200",
+      "precio_actual": "$150",
+      "activa": true
+    }
+  ],
+  "galeria": [
+    {
+      "imagen": "images/uploads/ejemplo1.jpg",
+      "alt": "Taza personalizada ejemplo",
+      "categoria": "tazas"
+    }
+  ]
+}

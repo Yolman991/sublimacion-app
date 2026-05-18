@@ -1,0 +1,94 @@
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+body { font-family: 'Open Sans', sans-serif; color: #333; background: #fff; }
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+
+/* ---- NAVBAR ---- */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 5%; background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 1000;
+}
+.logo { display: flex; align-items: center; }
+.logo h2 { color: #e65100; font-size: 1.8rem; }
+.logo span { font-size: 0.8rem; color: #666; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a { text-decoration: none; color: #333; font-weight: 600; transition: color 0.3s; }
+.nav-links a:hover { color: #e65100; }
+.menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
+
+/* ---- HERO ---- */
+.hero { background: linear-gradient(135deg, #ff6f00, #ff8f00); color: white; text-align: center; padding: 5rem 1rem; }
+.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+.hero-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+.btn { padding: 0.8rem 1.8rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
+.btn-primary { background: white; color: #e65100; }
+.btn-secondary { background: transparent; border: 2px solid white; color: white; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+/* ---- SECCIONES GENERALES ---- */
+.seccion { padding: 4rem 5%; }
+.titulo-seccion { text-align: center; font-size: 2.2rem; margin-bottom: 2rem; color: #e65100; position: relative; }
+.titulo-seccion::after { content: ''; display: block; width: 60px; height: 4px; background: #00bcd4; margin: 0.5rem auto; }
+
+/* ---- PRODUCTOS ---- */
+.productos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.producto-card { text-align: center; padding: 2rem; background: #f9f9f9; border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; }
+.producto-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.producto-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; }
+.producto-card i { font-size: 2.5rem; color: #00bcd4; margin-bottom: 1rem; }
+.producto-card h3 { margin-bottom: 0.5rem; color: #e65100; }
+
+/* ---- OFERTAS ---- */
+.ofertas-bg { background: #fff3e0; }
+.ofertas-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; }
+.oferta-card { background: white; border-left: 8px solid #e65100; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 400px; width: 100%; }
+.oferta-card h3 { color: #e65100; }
+.precio-anterior { text-decoration: line-through; color: #999; }
+.precio-actual { font-size: 1.8rem; font-weight: bold; color: #2e7d32; }
+.btn-oferta { display: inline-block; background: #25D366; color: white; padding: 0.5rem 1.5rem; border-radius: 30px; text-decoration: none; margin-top: 1rem; transition: background 0.3s; }
+.btn-oferta:hover { background: #1da851; }
+
+/* ---- GALERÍA ---- */
+.filtros { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.filtro-btn { background: #eee; border: none; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; font-weight: 600; transition: background 0.3s; }
+.filtro-btn.active, .filtro-btn:hover { background: #00bcd4; color: white; }
+.galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.galeria-item { overflow: hidden; border-radius: 10px; cursor: pointer; transition: transform 0.3s; }
+.galeria-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
+.galeria-item:hover { transform: scale(1.03); }
+.lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center; }
+.lightbox img { max-width: 90%; max-height: 90%; border-radius: 10px; }
+.cerrar-lightbox { position: absolute; top: 20px; right: 40px; color: white; font-size: 2rem; cursor: pointer; }
+
+/* ---- CÓMO PEDIR ---- */
+.pasos-bg { background: #e0f7fa; }
+.pasos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+.paso { text-align: center; background: white; padding: 2rem; border-radius: 15px; position: relative; }
+.paso-numero { background: #00bcd4; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 1rem; }
+.paso i { font-size: 2rem; color: #e65100; margin-bottom: 1rem; }
+
+/* ---- CONTACTO ---- */
+.contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.metodos-pago ul { list-style: none; }
+.metodos-pago li { font-size: 1.1rem; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem; }
+.metodos-pago i, .sobre-nosotros i { color: #e65100; width: 20px; }
+.sobre-nosotros p { margin-bottom: 0.5rem; }
+.sobre-nosotros a { color: #333; text-decoration: none; }
+
+/* ---- FOOTER ---- */
+footer { background: #1a1a1a; color: white; text-align: center; padding: 1.5rem; }
+.redes a { color: white; margin: 0 0.5rem; font-size: 1.2rem; }
+
+/* ---- WHATSAPP FLOAT ---- */
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 2rem; line-height: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s; }
+.whatsapp-float:hover { transform: scale(1.1); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+    .nav-links { display: none; flex-direction: column; background: white; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; }
+    .nav-links.active { display: flex; }
+    .menu-toggle { display: block; }
+    .contacto-grid { grid-template-columns: 1fr; }
+}
