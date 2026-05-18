@@ -1,9 +1,11 @@
 backend:
-  name: git-gateway
-  branch: main # O master, según tu rama principal
+  name: github
+  repo: Yolman991/sublimacion-app
+  branch: main
+  base_url: https://decapcms.org/oauth
 
-media_folder: "images/uploads" # Carpeta donde se guardarán las imágenes que subas
-public_folder: "/images/uploads" # Ruta pública para que la web las encuentre
+media_folder: "images/uploads"
+public_folder: "/sublimacion-app/images/uploads"
 
 collections:
   - name: "productos"
